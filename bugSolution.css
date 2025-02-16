@@ -1,0 +1,19 @@
+To resolve this issue, use the clearfix hack. Add the following CSS class to the parent container:
+
+```css
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+```
+
+This will clear the floats, ensuring proper layout.  Modify your HTML to include the `clearfix` class on the parent container:
+
+```html
+<div class="clearfix">
+  <!-- Your floated elements here -->
+</div>
+```
+
+This ensures that the parent container correctly accounts for the widths of its floated children, preventing unexpected layout issues.
