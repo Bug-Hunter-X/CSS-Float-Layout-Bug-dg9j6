@@ -1,0 +1,10 @@
+The following CSS code snippet might cause unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This seemingly harmless code can lead to unexpected layout issues if not handled carefully. The problem arises when the total width of floated elements exceeds the parent container's width.
